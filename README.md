@@ -1,0 +1,3 @@
+This repository contains a minimal example demonstrating a potential data race in Rust. The code uses unsafe Rust to directly manipulate a vector's memory, bypassing Rust's memory safety guarantees. This can lead to unpredictable behavior if accessed concurrently.
+
+The `bug.rs` file contains the buggy code, while `bugSolution.rs` offers a safer alternative using Rust's standard library features.  The solution avoids the use of raw pointers and leverages safe methods to modify the vector.
